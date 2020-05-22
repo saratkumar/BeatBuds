@@ -1,0 +1,176 @@
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top p-2 transparent" >
+    <div class="container">
+        <p class="font-rancho site-logo cursor-pointer" routerLink='' (click)="scrollToElement(home)">Beat BUDS</p>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+            aria-label="Toggle navigation"><i class="fas fa-bars ml-1"></i></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav text-uppercase ml-auto">
+                <li class="nav-item white-color" (click)="scrollToElement(home)">
+                    <div class="p-1"><i class="fa fa-home"></i><span class="pl-2">HOME</span></div>
+                </li>
+                <li class="nav-item white-color" (click)="scrollToElement(blog)">
+                    <div class="p-1"><i class="fa fa-book"></i><span class="pl-2">BLOGS</span></div>
+                </li>
+                <li class="nav-item white-color" (click)="scrollToElement(events)">
+                    <div class="p-1"><i class="fa fa-calendar"></i><span class="pl-2">EVENTS</span></div>
+                </li>
+                <li class="nav-item white-color" (click)="scrollToElement(contact)">
+                    <div class="p-1"><i class="fa fa-phone"></i><span class="pl-2">CONTACTS</span></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="w-100 h-100" #home>
+    <img src="../../assets/images/man-in-white-shirt-and-gray-pants-jumping-on-black-wooden-3284572.jpg" alt="Banner"
+        class="w-100 d-block d-sm-none">
+    <div>
+        <video width="100%" height="auto" autoplay loop
+            class="d-none d-md-block d-lg-block d-xl-block background-banner-video">
+            <source type="video/mp4" srcset="InShot_20200418_024555812.mp4 480w, InShot_20200418_024555812.mp4 800w"
+                sizes="(max-width: 600px) 480px, 800px" src="../../assets/images/banner.mp4"
+                alt="Banner">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+
+<div class="download-logo w-100">
+    <div class="logo-google"><a href="https://play.google.com/store/apps" target="_blank"><img
+                src="../../assets/logos/google-play.png"
+                alt="Google-play"></a></div>
+    <div class="logo-apple"><a
+            href="https://itunes.apple.com/ios/app-store" target="_blank"><img
+                src="../../assets/logos/apple-store.png"
+                alt="Apple-store"></a>
+    </div>
+
+</div>
+
+<div class="blog-container col-12 theme-background-color p-3" #blog>
+    <h2 class="font-rancho text-center pb-1 white-color">BLOGS</h2>
+
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="card w-100">
+                <img class="card-img-top" src="../../assets/images/men-dancing-in-front-of-people-2838787.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">John Doe</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                </div>
+                <div class="content m-auto text-center mt-3">
+                    <a href="#" ><i class="fa fa-arrow-right white-color fa-2x" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="col-sm-3">
+            <div class="card w-100">
+                <img class="card-img-top" src="../../assets/images/men-dancing-in-front-of-people-2838787.jpg" alt="Card image"
+                    style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">John Doe</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                </div>
+                <div class="content m-auto text-center mt-3">
+                <a href="#"><i class="fa fa-arrow-right white-color fa-2x" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="card w-100">
+                <img class="card-img-top" src="../../assets/images/men-dancing-in-front-of-people-2838787.jpg" alt="Card image"
+                    style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">John Doe</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                </div>
+                <div class="content m-auto text-center mt-3">
+                    <a href="#"><i class="fa fa-arrow-right white-color fa-2x" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 m-auto text-center white-color cursor-pointer">
+            <span [routerLink]="'under-construction'">
+            <i class="fa fa-plus fa-3x" aria-hidden="true"></i>
+            <p class="">See More...</p>
+            </span>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- Events Section -->
+
+<div class="w-100 theme-background-color p-3 " #events>
+    <h2 class="font-rancho text-center pb-1 white-color">EVENTS</h2>
+    <div class="d-flex flex-row">
+        <div class="d-flex flex-column">
+            <img src="../../assets/images/people-in-concert-1763075.jpg" class="img-fluid">
+            <!-- <img src="../../assets/images/person-playing-sun-burst-electric-bass-guitar-in-bokeh-96380.jpg" class="img-fluid"> -->
+        </div>
+        <div class="d-flex flex-column">
+            <img src="../../assets/images/smiling-man-standing-and-dancing-near-smiling-woman-2240771.jpg" class="img-fluid">
+            <!-- <img src="../../assets/images/man-in-white-shirt-and-gray-pants-jumping-on-black-wooden-3284572.jpg" class="img-fluid"> -->
+        </div>
+        <div class="d-flex flex-column">
+            <!-- <img src="../../assets/images/people-in-concert-1763075.jpg" class="img-fluid"> -->
+            <img src="../../assets/images/person-playing-sun-burst-electric-bass-guitar-in-bokeh-96380.jpg" class="img-fluid">
+        </div>
+        <div class="d-flex flex-column">
+            <!-- <img src="../../assets/images/smiling-man-standing-and-dancing-near-smiling-woman-2240771.jpg" class="img-fluid"> -->
+            <img src="../../assets/images/man-in-white-shirt-and-gray-pants-jumping-on-black-wooden-3284572.jpg" class="img-fluid">
+        </div>
+        <div class="d-flex flex-column">
+            <img src="../../assets/images/men-dancing-in-front-of-people-2838787.jpg" class="img-fluid">
+            
+        </div>
+    </div>
+
+    <h1 class="font-rancho text-center mt-5 events-h5" [routerLink]="'under-construction'">Wants to know more about upcoming events <i class="fa fa-arrow-right events-right-arrow" aria-hidden="true"></i></h1> 
+</div>
+
+<!-- Contant Section -->
+<div class="col-12 contact-container p-5" #contact>
+    <div class="row">
+        <div class="col-sm-6">
+            <p>GET IN TOUCH</p>
+            <p>Your queries and suggestions are always welcome.</p>
+
+            <p><i class="fa fa-globe" aria-hidden="true"></i> <span class="pl-2">INDIA</span></p>
+            <p><i class="fa fa-map-marker" aria-hidden="true"></i> <span class="pl-2">No 16, Lorem epsum Lorem epsum, Lorem epsum Lorem epsumLorem epsum Lorem epsum, Lorem epsum Lorem epsum</span></p>
+            <p><i class="fa fa-phone" aria-hidden="true"></i> <span class="pl-2">9876543210</span></p>
+        </div>
+
+        <div class="col-sm-6">
+            <form>
+                <div class="col-sm-12 form-group">
+                    <label>User Name</label>
+                    <input type="text" class="form-control" >
+                </div>
+                <div class="col-sm-12 form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-control">
+                </div>
+                <div class="col-sm-12 form-group">
+                    <label>Phone</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-sm-12 form-group">
+                    <label>Remarks/Sugeestion</label>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="col-sm-12">
+                    <button type="submit" class="btn btn-primary w-100 theme-background-color">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

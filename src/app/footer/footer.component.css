@@ -1,0 +1,15 @@
+.logo-google, .logo-apple {
+    height: 30px;
+    margin: 5px;
+}
+
+.logo-google img, .logo-apple img{
+  height: 100%
+}
+
+
+
+.otherMenus:hover { 
+  text-decoration: underline;
+  cursor: pointer;
+}

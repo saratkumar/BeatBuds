@@ -1,0 +1,12 @@
+.vh-70 {
+    height: 70vh;
+}
+.goHome:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+goHome {
+    color:  #323539 !important
+}
+    

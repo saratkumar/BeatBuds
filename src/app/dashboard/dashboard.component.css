@@ -1,0 +1,137 @@
+.home-banner {
+  position: relative;
+  /* display: inline; */
+}
+
+.nav-item {
+  cursor: pointer;
+  font-size: 13px
+}
+
+.logo-google, .logo-apple {
+    height: 50px;
+    margin: 15px;
+}
+
+.logo-google img, .logo-apple img{
+  height: 100%
+}
+
+.download-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    bottom: 11vh;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    left: 0;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+
+.home-banner {
+    width: 100%;
+    height: 100vh;
+}
+
+.mobile-bg {
+    /* position: absolute; */
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #30435a;
+    text-align: center
+}
+
+
+@media only screen and (max-width: 768px) {
+.download-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    bottom: 20vh;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    left: 0;
+}
+
+.logo-google, .logo-apple {
+    height: 30px;
+    margin: 15px;
+}
+}
+
+
+.background-banner-video { 
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+
+}
+
+.card {
+  box-shadow: 1px 1px 5px 5px !important;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+
+.card .content
+{
+  background: rgba( 0, 0, 0, 0.9 );
+  bottom: -100%;
+  color: #fff;
+  height: 30%;
+  left: 0%;
+  text-align: center;
+  position: absolute;
+  transition: bottom 0.8s ease;
+  width: 100%;
+}
+.card .content .fa {
+  margin-top:10px
+}
+.card:hover .content
+{
+  bottom: 0%;
+}
+
+.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-brand{ 
+    color: black
+}
+
+.transparent {
+    background: #00000033;;
+}
+
+.events-right-arrow {
+  transition-property: width;
+  transition-duration: 0.5s;
+  /* transition-delay: 0.5s; */
+  cursor: pointer;
+}
+
+.events-h5:hover  .events-right-arrow{
+  /* width: 75px;
+  height: 75px; */
+  width: 55px;
+  height: 55px;
+  border: 4px solid;
+  border-color: white;
+  color: white;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+

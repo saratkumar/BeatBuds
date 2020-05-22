@@ -1,0 +1,7 @@
+.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-brand{ 
+    color: black
+}
+
+.transparent {
+    background: #00000033;;
+}
